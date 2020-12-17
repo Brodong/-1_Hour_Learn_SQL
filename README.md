@@ -251,47 +251,36 @@ delete from SC where Sno=200215121;
 
 记录了每个雇员的基本信息
 
-NO 字段 类型 描述
-
-1 empno Number（4） 雇员编号
-
-2 ename Varchar2(10) 雇员姓名
-
-3 job Varchar2(9) 工作职位
-
-4 mgr Number(4) 雇员的领导(经理)编号
-
-5 hierdate date 入职日期
-
-6 sal Number(7,2) 月薪/工资
-
-7 comm Number(7,2) 奖金
-
-8 deptno Number(2) 雇员所属部门的编号
+| NO | 字段       | 类型             | 描述            |
+|----|----------|----------------|---------------|
+| 1  | empno    | Number（4）      | 雇员编号          |
+| 2  | ename    | Varchar2\(10\) | 雇员姓名          |
+| 3  | job      | Varchar2\(9\)  | 工作职位          |
+| 4  | mgr      | Number\(4\)    | 雇员的领导\(经理\)编号 |
+| 5  | hierdate | date           | 入职日期          |
+| 6  | sal      | Number\(7,2\)  | 月薪/工资         |
+| 7  | comm     | Number\(7,2\)  | 奖金            |
+| 8  | deptno   | Number\(2\)    | 雇员所属部门的编号     |
 
 **部门表(dept)**
 
 记录了每个部门的基本信息
 
-NO 字段 类型 描述
-
-1 deptno Number(2) 部门编号(唯一)
-
-2 dname Varchar2(14) 部门名称
-
-3 loc Varchar2(13) 地址
+| NO | 字段     | 类型             | 描述         |
+|----|--------|----------------|------------|
+| 1  | deptno | Number\(2\)    | 部门编号\(唯一\) |
+| 2  | dname  | Varchar2\(14\) | 部门名称       |
+| 3  | loc    | Varchar2\(13\) | 地址         |
 
 **工资等级表 (salgrade)**
 
 一个公司的工资等级制，用来表示同一等级的工资下限及上限
 
-NO 字段 类型 描述
-
-1 Grade number 等级名称
-
-2 Losal number 此等级的最低工资
-
-3 hisal number 此等级的最高工资
+| NO | 字段    | 类型     | 描述       |
+|----|-------|--------|----------|
+| 1  | Grade | number | 等级名称     |
+| 2  | Losal | number | 此等级的最低工资 |
+| 3  | hisal | number | 此等级的最高工资 |
 
 ## 4.1 建立基本表
 
